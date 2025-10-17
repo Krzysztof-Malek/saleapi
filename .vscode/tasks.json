@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "frontend:dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "salesapi/frontend" },
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": [{ "regexp": "." }],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "Local:",
+          "endsPattern": "ready in"
+        }
+      }
+    },
+    {
+      "label": "backend:dev-maven",
+      "type": "shell",
+      "command": "./mvnw spring-boot:run || mvn spring-boot:run",
+      "options": { "cwd": "salesapi" },
+      "problemMatcher": []
+    },
+    {
+      "label": "backend:dev-gradle",
+      "type": "shell",
+      "command": "./gradlew bootRun || gradle bootRun",
+      "options": { "cwd": "salesapi" },
+      "problemMatcher": []
+    }
+  ]
+}

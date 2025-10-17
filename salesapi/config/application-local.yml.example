@@ -1,0 +1,12 @@
+# Local-only configuration overrides.
+# Copy to config/application-local.yml (ignored by Git) and fill in real secrets for development.
+
+stockx:
+  client:
+    id: your-local-stockx-client-id
+    secret: your-local-stockx-client-secret
+  redirect:
+    uri: http://localhost:8080/stockx/callback
+  api:
+    url: https://gateway.stockx.com/api/v3
+    key: your-local-stockx-api-key

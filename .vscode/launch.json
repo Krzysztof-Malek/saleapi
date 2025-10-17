@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Run Frontend + Backend (Maven)",
+      "configurations": ["Java: SaleInventoryApplication"],
+      "preLaunchTask": "frontend:dev"
+    },
+    {
+      "name": "Run Frontend + Backend (Gradle)",
+      "configurations": ["Java: SaleInventoryApplication"],
+      "preLaunchTask": "backend:dev-gradle"
+    }
+  ],
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Java: SaleInventoryApplication",
+      "request": "launch",
+      "mainClass": "com.saleinventory.SaleInventoryApplication",
+      "projectName": "salesapi"
+    }
+  ]
+}

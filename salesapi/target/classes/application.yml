@@ -1,0 +1,28 @@
+spring:
+  config:
+    import: optional:file:.env[.properties],optional:file:./config/application-local.yml
+  datasource:
+    url: jdbc:h2:mem:salesdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8081
+
+stockx:
+  client:
+    id: ${STOCKX_CLIENT_ID}
+    secret: ${STOCKX_CLIENT_SECRET}
+  redirect:
+    uri: ${STOCKX_REDIRECT_URI}
+  api:
+    url: ${STOCKX_API_URL}
+    key: ${STOCKX_API_KEY}

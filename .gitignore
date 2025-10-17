@@ -1,0 +1,3 @@
+# Local secret material (do not commit)
+salesapi/config/application-local.yml
+salesapi/.env
