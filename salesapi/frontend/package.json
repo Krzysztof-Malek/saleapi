@@ -7,19 +7,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
     "axios": "^1.6.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
+    "framer-motion": "^12.23.24",
     "lucide-react": "^0.523.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "recharts": "^3.0.0"
+    "recharts": "^3.3.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "@types/node": "^24.8.1",
+    "@vitejs/plugin-react": "^4.7.0",
     "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.7",
-    "vite": "^6.3.5"
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.14",
+    "vite": "^6.4.0"
   }
 }
